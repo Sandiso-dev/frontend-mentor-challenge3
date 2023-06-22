@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    height: 100vh;
+    background: hsl(0, 0%, 86%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: white;
+    padding: 16px;
+    border-radius: 9px;
+    border-bottom-right-radius: 46px;
+    width: 70%;  
+    position: relative;                         
+}
+
+.inputs{
+    display: flex;
+    gap: 14px;
+}
+
+.input > input{
+    width: 67px;
+    padding: 8px;
+    display: block;
+    border-radius: 6px;
+    border: 1px solid lightslategray;
+    font-weight: 700;
+    color: hsl(259, 81%, 44%);
+}
+
+input:hover{
+    cursor: pointer;
+    border: 2px solid hsl(259, 100%, 65%);
+}
+
+.day_erro,
+.month_erro,
+.year_erro{
+    color: red;
+}
+
+hr{
+    margin-top: 20px;
+    width: 90%;
+}
+
+button {
+    background: hsl(259, 100%, 65%);
+    border: none;
+    margin-top: 9px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    padding: 15px;
+}
+
+button > img{
+    width: 25px;
+}
+
+button:hover{
+    cursor: pointer;
+    background: hsl(259, 88%, 67%);
+}
+
+.output{
+    display: flex;
+    align-items: center;
+}
+
+.output_year,
+.output_month,
+.output_days{
+    color: hsl(259, 100%, 65%);
+    font-size: 65px;
+    display: inline;
+}
+
+
+@media screen and (max-width: 476px){
+    .container{
+        width: 90%;
+    }
+    hr{
+        margin-top: 50px;
+    }
+    button{
+        right: 200px;
+        top: 85px;
+    }
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
